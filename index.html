@@ -355,7 +355,7 @@
       const tabItems = document.querySelectorAll('.tab-item');
       const tabIndicator = document.querySelector('.tab-indicator');
       const tabvideor = document.querySelector('.tab-video');
-      const tabvideos = ['/static/videos/carousel1.mp4', '/static/videos/carousel2.mp4', '/static/videos/carousel3.mp4'];
+      const tabvideos = ['static/videos/carousel1.mp4', 'static/videos/carousel2.mp4', 'static/videos/carousel3.mp4'];
       function updateTabs() {
           tabItems.forEach((tab, index) => {
             tab.classList.remove('active');
@@ -398,7 +398,7 @@
       map.on('load',()=>{
         map.addSource('points', {
           'type': 'geojson',
-          'data':'/static/locations.json'
+          'data':'static/locations.json'
         });
         map.addLayer({
           'id': 'points',
