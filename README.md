@@ -32,9 +32,10 @@ After downloading, update the `/path/to/dataset/` in `./config.yaml` with the ac
 ## Testing
 To retrieve satellite images (sat) using NewYork-mixed (panoramic + single-view) text and the Ours model, run:
 ```bash
-python zeroshot.py --version NewYork-mixed --img_type sat  --model CLIP-L/14@336 --expand
+python zeroshot.py --version NewYork-mixed --img_type sat --model CLIP-L/14@336 --expand
 ```
-For more examples, refer to the script in `./scripts/evaluate.sh`.
+You can also evaluate specific checkpoint by setting `--checkpoint {your_checkpoint_path}`
+For more examples, please refer to the script in `./scripts/evaluate.sh`.
 
 ## Training
 To train the Ours model on Brisbane-mixed and OSM datasets, use the following command:
@@ -45,4 +46,4 @@ The `--logging` flag determines whether to save log files and model checkpoints.
 
 ## Model Checkpoints
 
-Our model checkpoints are available at:
+Our model checkpoints are available at: [https://huggingface.co/CVG-Text/CrossText2Loc](https://huggingface.co/CVG-Text/CrossText2Loc)
