@@ -32,7 +32,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Where Am I</title>
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="static/icons/openstreetmap.svg"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
       rel="stylesheet"
@@ -101,6 +105,7 @@
           gap: 50px;
           justify-content: center;
           align-items: center;
+          margin-bottom: 3vh;
         "
       >
         <span class="link-block">
@@ -159,6 +164,7 @@
           text-align: justify;
           margin: 20px auto;
           margin-top: 3vh;
+          margin-bottom: 5vh;
         "
       >
         <strong style="font-size: 25px">Abstract: </strong>Cross-view
@@ -207,7 +213,7 @@
       >
         Task Application
       </h2>
-      <div id="Tabdiv">
+      <div id="Tabdiv" style="margin-bottom: 3vh">
         <!-- 标签行 -->
         <div class="tab-row" style="margin-bottom: 3vh">
           <div class="tab-item" id="tab-1">Passenger</div>
@@ -217,7 +223,14 @@
           <div class="tab-indicator"></div>
         </div>
         <div style="width: 40vw">
-          <video class="tab-video" muted loop autoplay controls>
+          <video
+            class="tab-video"
+            muted
+            loop
+            autoplay
+            controls
+            style="width: 100%"
+          >
             <source src="static/videos/carousel1.mp4" type="video/mp4" />
           </video>
         </div>
@@ -301,19 +314,27 @@
         <!-- 城市选择器 -->
         <div
           class="city-selector"
-          style="position: absolute; top: 0; right: 0; z-index: 1"
+          style="
+            position: absolute;
+            top: 1vh;
+            right: 1vw;
+            z-index: 1;
+            background-color: #ffffff;
+            padding: 0.5vw;
+            border-radius: 25px;
+          "
         >
-          <label for="city-selector" style="color: #ffffff"
+          <label for="city-selector" style="color: #0c0c0c; font-size: 15px"
             >Choose a city:</label
           >
-          <select id="city-selector">
+          <select id="city-selector" style="width: 5vw; font-size: 15px">
             <option value="brisbane" selected>Brisbane</option>
             <option value="new-york">New York</option>
             <option value="tokyo">Tokyo</option>
           </select>
         </div>
         <!-- 地图容器 -->
-        <div id="map"></div>
+        <div id="map" style="border-radius: 25px"></div>
       </div>
 
       <h1
