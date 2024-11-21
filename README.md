@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Dataset Download and Path Configuration
 
-The images and annotation files for CVG-Text can be found at https://huggingface.co/CVG-Text/CVG-Text
+The images and annotation files for CVG-Text can be found at [https://huggingface.co/CVG-Text/CVG-Text](https://huggingface.co/datasets/CVG-Text/CVG-Text)
 
 After downloading, update the `/path/to/dataset/` in `./config.yaml` with the actual dataset paths.
 
