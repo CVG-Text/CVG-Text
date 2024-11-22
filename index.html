@@ -102,10 +102,10 @@
       <div
         style="
           display: flex;
-          gap: 50px;
+          gap: 70px;
           justify-content: center;
           align-items: center;
-          margin-bottom: 3vh;
+          margin-bottom: 5vh;
         "
       >
         <span class="link-block">
@@ -155,44 +155,13 @@
         imagery or OSM data based on textual queries for position localization
         <em>(Down)</em>.
       </h1>
-
-      <h1
-        style="
-          width: 40%;
-          font-size: 20px;
-          line-height: 1.5;
-          text-align: justify;
-          margin: 20px auto;
-          margin-top: 3vh;
-          margin-bottom: 5vh;
-        "
-      >
-        <strong style="font-size: 25px">Abstract: </strong>Cross-view
-        geo-localization identifies the locations of street-view images by
-        matching them with geo-tagged satellite images or OSM. However, most
-        existing studies focus on image-to-image retrieval, with fewer
-        addressing text-guided retrieval, a task vital for applications like
-        pedestrian navigation and emergency response. In this work, we introduce
-        a novel task for cross-view geo-localization with natural language
-        descriptions, which aims to retrieve corresponding satellite images or
-        OSM database based on scene text descriptions. To support this task, we
-        construct the CVG-Text dataset by collecting cross-view data from
-        multiple cities and employing a scene text generation approach that
-        leverages the annotation capabilities of Large Multimodal Models to
-        produce high-quality scene text descriptions with localization details.
-        Additionally, we propose a novel text-based retrieval localization
-        method, CrossText2Loc, which improves recall by 10% and demonstrates
-        excellent long-text retrieval capabilities. In terms of explainability,
-        it not only provides similarity scores but also offers retrieval
-        reasons.
-      </h1>
     </section>
 
     <!-- End Start -->
 
-    <!-- Task Application -->
+    <!--  Abstract  -->
     <section
-      class="hero is-small is-light"
+      class="section hero is-light"
       style="
         display: flex;
         flex-direction: column;
@@ -208,17 +177,91 @@
           margin-bottom: 30px;
           margin-left: auto;
           margin-right: auto;
+        "
+      >
+        Abstract
+      </h2>
+      <h1
+        style="
+          width: 40vw;
+          font-size: 20px;
+          line-height: 1.5;
+          text-align: justify;
+          margin: 20px auto;
+          margin-top: 2vh;
+          margin-bottom: 1vh;
+        "
+      >
+        Cross-view geo-localization identifies the locations of street-view
+        images by matching them with geo-tagged satellite images or OSM.
+        However, most existing studies focus on image-to-image retrieval, with
+        fewer addressing text-guided retrieval, a task vital for applications
+        like pedestrian navigation and emergency response. In this work, we
+        introduce a novel task for cross-view geo-localization with natural
+        language descriptions, which aims to retrieve corresponding satellite
+        images or OSM database based on scene text descriptions. To support this
+        task, we construct the CVG-Text dataset by collecting cross-view data
+        from multiple cities and employing a scene text generation approach that
+        leverages the annotation capabilities of Large Multimodal Models to
+        produce high-quality scene text descriptions with localization details.
+        Additionally, we propose a novel text-based retrieval localization
+        method, CrossText2Loc, which improves recall by 10% and demonstrates
+        excellent long-text retrieval capabilities. In terms of explainability,
+        it not only provides similarity scores but also offers retrieval
+        reasons.
+      </h1>
+    </section>
+    <!-- Abstract -->
+
+    <!-- Task Application -->
+    <section
+      class="hero is-small"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(252, 246, 238);
+      "
+    >
+      <h2
+        class="title is-3"
+        style="
+          width: 40vw;
+          text-align: left;
+          margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
           margin-top: 5vh;
         "
       >
         Task Application
       </h2>
+      <h1
+        style="
+          width: 40vw;
+          font-size: 20px;
+          line-height: 1.5;
+          text-align: justify;
+          margin: 20px auto;
+          margin-top: 2vh;
+          margin-bottom: 5vh;
+        "
+      >
+        Text-guided geo-localization is commonly observed in daily scenarios.
+        For instance, taxi drivers rely on passengers' verbal instructions to
+        identify their location, tourists seek assistance from service centers
+        by describing their position when lost, or delivery drivers and couriers
+        are guided to specific locations through text descriptions. In
+        situations where GPS or Wi-Fi signals are disrupted, describing
+        locations in natural language plays a crucial role.
+      </h1>
       <div id="Tabdiv" style="margin-bottom: 3vh">
         <!-- 标签行 -->
         <div class="tab-row" style="margin-bottom: 3vh">
           <div class="tab-item" id="tab-1">Passenger</div>
-          <div class="tab-item" id="tab-2">Visitors</div>
-          <div class="tab-item" id="tab-3">Courier</div>
+          <div class="tab-item" id="tab-2">Courier</div>
+          <div class="tab-item" id="tab-3">Visitors</div>
           <!-- 标签指示器 -->
           <div class="tab-indicator"></div>
         </div>
@@ -293,19 +336,19 @@
         <img
           src="static/images/datasets_1.PNG"
           alt="Interpolate start reference image."
-          style="height: 37vh"
+          style="height: 32vh"
         />
         <img
           src="static/images/datasets_2.PNG"
           alt="Interpolate start reference image."
-          style="height: 37vh"
+          style="height: 32vh"
         />
       </div>
 
       <div
         class="map-container"
         style="
-          width: 40vw;
+          width: 35vw;
           margin: 0 auto;
           margin-bottom: 2vh;
           position: relative;
@@ -339,7 +382,7 @@
 
       <h1
         style="
-          width: 40vw;
+          width: 35vw;
           font-size: 20px;
           line-height: 1.5;
           text-align: justify;
@@ -494,7 +537,7 @@
 
       <img
         src="static/images/Quantitative evaluation.png"
-        style="width: 32vw; margin-bottom: 1vh"
+        style="width: 38vw; margin-bottom: 1vh"
       />
 
       <h1
@@ -525,14 +568,14 @@
           font-size: 30px;
           line-height: 1.5;
           text-align: center;
-          margin-bottom: 30px;
+          margin-bottom: 3vh;
           font-style: italic;
         "
       >
         Qualitative evaluation
       </h1>
 
-      <div style="width: 32vw; margin-bottom: 1vh">
+      <div style="width: 38vw; margin-bottom: 3vh">
         <canvas id="pdfCanvas"></canvas>
       </div>
 
@@ -546,20 +589,20 @@
         "
       >
         From the visualization results of OSM data retrieval localization in
-        Figure \ref{fig:Qualitative}, it is evident that our method can locate
-        specific store information or similar road details based on effective
-        textual descriptions. Additionally, the heatmap responses provided by
-        the Explainable Retrieval Module (ERM) show which features the model
-        focuses on in the retrieved image. In the first example, the model
-        focuses on “Burger Mania”. Interestingly, even in non-top-1 results, it
-        still emphasizes the burger icon. In the second example, the model
-        focuses on the “zebra crossing” and “white gridline”, with the first
-        three retrieval results all highlighting the zebra crossing, and the
-        best retrieval result matching both features. The ERM module also
-        leverages the capabilities of LMMs to provide corresponding retrieval
-        reasoning, such as matching the same store information or scene
-        features, which significantly enhances the interpretability of the
-        retrieval localization.
+        Figure, it is evident that our method can locate specific store
+        information or similar road details based on effective textual
+        descriptions. Additionally, the heatmap responses provided by the
+        Explainable Retrieval Module (ERM) show which features the model focuses
+        on in the retrieved image. In the first example, the model focuses on
+        “Burger Mania”. Interestingly, even in non-top-1 results, it still
+        emphasizes the burger icon. In the second example, the model focuses on
+        the “zebra crossing” and “white gridline”, with the first three
+        retrieval results all highlighting the zebra crossing, and the best
+        retrieval result matching both features. The ERM module also leverages
+        the capabilities of LMMs to provide corresponding retrieval reasoning,
+        such as matching the same store information or scene features, which
+        significantly enhances the interpretability of the retrieval
+        localization.
       </h1>
     </section>
     <!-- End Experimental Results -->
@@ -595,21 +638,15 @@
           margin-bottom: 10px;
         "
       >
-        From the visualization results of OSM data retrieval localization in
-        Figure \ref{fig:Qualitative}, it is evident that our method can locate
-        specific store information or similar road details based on effective
-        textual descriptions. Additionally, the heatmap responses provided by
-        the Explainable Retrieval Module (ERM) show which features the model
-        focuses on in the retrieved image. In the first example, the model
-        focuses on “Burger Mania”. Interestingly, even in non-top-1 results, it
-        still emphasizes the burger icon. In the second example, the model
-        focuses on the “zebra crossing” and “white gridline”, with the first
-        three retrieval results all highlighting the zebra crossing, and the
-        best retrieval result matching both features. The ERM module also
-        leverages the capabilities of LMMs to provide corresponding retrieval
-        reasoning, such as matching the same store information or scene
-        features, which significantly enhances the interpretability of the
-        retrieval localization.
+        In this work, we explore the task of cross-view geo-localization using
+        natural language descriptions and introduce the CVG-Text dataset, which
+        includes well-aligned street-views, satellite images, OSM images, and
+        text descriptions. We also propose the CrossText2Loc text retrieval
+        localization method, which excels in handling long-text retrieval and
+        interpretability for this task. This work represents another advancement
+        in the field of natural language-based localization. It also introduces
+        new application scenarios for cross-view localization, encouraging
+        subsequent researchers to explore and innovate further.
       </h1>
     </section>
     <!-- End  Conclusion -->
@@ -654,9 +691,9 @@
       const tabIndicator = document.querySelector(".tab-indicator");
       const tabvideor = document.querySelector(".tab-video");
       const tabvideos = [
-        "static/videos/newyork1_video.mp4",
-        "static/videos/fig1_video.mp4",
-        "static/videos/fig1_video.mp4",
+        "static/videos/Newyork_480P_100mbs_30fps.mp4",
+        "static/videos/Tokyo_480p_100mbs_30fps.mp4",
+        "static/videos/Fig1_480p_100mbs_30fps.mp4",
       ];
       function updateTabs() {
         tabItems.forEach((tab, index) => {
@@ -706,8 +743,8 @@
             const pageWidth = page.getViewport({ scale: 1 }).width; // 获取原始页面的宽度
             const pageHeight = page.getViewport({ scale: 1 }).height; // 获取原始页面的高度
 
-            // 获取canvas的目标宽度（40vw）
-            const targetWidth = window.innerWidth * 0.4; // 40vw
+            // 获取canvas的目标宽度（36vw）
+            const targetWidth = window.innerWidth * 0.36; // 36vw
             const scale = targetWidth / pageWidth; // 计算缩放比例
 
             // 计算渲染的视口
@@ -760,9 +797,9 @@
 
     <script>
       const cities = {
-        "new-york": { center: [-73.976, 40.7528], zoom: 11 },
+        "new-york": { center: [-73.976, 40.7528], zoom: 14 },
         brisbane: { center: [153.0278, -27.4698], zoom: 12 },
-        tokyo: { center: [139.7517, 35.6595], zoom: 12 },
+        tokyo: { center: [139.7517, 35.6595], zoom: 14 },
       };
 
       mapboxgl.accessToken =
@@ -840,7 +877,7 @@
 
       // 调用函数渲染PDF
       const resultPdfUrl = "static/pdfs/Qualitative evaluation.pdf";
-      const resultTargetWidth = window.innerWidth * 0.32; // 32vw对应的宽度
+      const resultTargetWidth = window.innerWidth * 0.36; // 32vw对应的宽度
       resultRenderPdfToCanvas(resultPdfUrl, "pdfCanvas", resultTargetWidth);
     </script>
   </body>
